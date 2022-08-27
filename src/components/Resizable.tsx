@@ -1,13 +1,7 @@
 import { MouseEvent, useEffect, useState } from 'react';
-import { TYPES } from '../types/types';
+import {ResizableTypes, TYPES} from '../types/types';
 import '../style.css';
-
-type ResizableTypes = {
-    initialSize: { x: number; y: number };
-    children: JSX.Element | JSX.Element[];
-    className?: string;
-    icon?: JSX.Element;
-};
+import React from 'react';
 
 const Resizeable = (props: ResizableTypes) => {
     const { initialSize, icon, children, className } = props;
@@ -30,21 +24,21 @@ const Resizeable = (props: ResizableTypes) => {
 
         const onMouseMove = (mouseMoveEvent: any) => {
             if (type === TYPES.WIDTH) {
-                setSize((currentSize) => ({
+                setSize(() => ({
                     x: startSize.x - startPosition.x + mouseMoveEvent.pageX,
                     y: size.y
                 }));
             }
 
             if (type === TYPES.HEIGHT) {
-                setSize((currentSize) => ({
+                setSize(() => ({
                     x: startSize.x,
                     y: startSize.y - startPosition.y + mouseMoveEvent.pageY
                 }));
             }
 
             if (type === TYPES.BOTH) {
-                setSize((currentSize) => ({
+                setSize(() => ({
                     x: startSize.x - startPosition.x + mouseMoveEvent.pageX,
                     y: startSize.y - startPosition.y + mouseMoveEvent.pageY
                 }));
