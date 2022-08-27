@@ -3,6 +3,10 @@
     "version": "0.1.8",
     "private": false,
     "main": "./dist/index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/100peck/resizable.git"
+    },
     "dependencies": {
         "@testing-library/jest-dom": "^5.14.1",
         "@testing-library/react": "^13.0.0",
