@@ -1,5 +1,5 @@
 export enum TYPES {
-    WIDTH = "width",
-    HEIGHT = "height",
-    BOTH = "both"
+    WIDTH = 'width',
+    HEIGHT = 'height',
+    BOTH = 'both'
 }
