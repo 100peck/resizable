@@ -1,6 +1,6 @@
 import { MouseEvent, useEffect, useState } from 'react';
-import { TYPES } from './types/types';
-import './style.css';
+import { TYPES } from '../types/types';
+import '../style.css';
 
 type ResizableTypes = {
     initialSize: { x: number; y: number };

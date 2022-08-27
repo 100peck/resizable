@@ -1,1 +1,3 @@
-export { default as Resizable } from './Resizable';
+import Resizable from './components/Resizable';
+
+export default Resizable;
