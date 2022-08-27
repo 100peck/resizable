@@ -1,7 +1,6 @@
-import { MouseEvent, useEffect, useState } from 'react';
+import React, { MouseEvent, useEffect, useState } from 'react';
 import {ResizableTypes, TYPES} from '../types/types';
 import '../style.css';
-import React from 'react';
 
 const Resizeable = (props: ResizableTypes) => {
     const { initialSize, icon, children, className } = props;
