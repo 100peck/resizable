@@ -1,6 +1,6 @@
 {
-    "name": "ceros-resizable",
-    "version": "0.1.8",
+    "name": "simple-resizer",
+    "version": "0.0.1",
     "private": false,
     "main": "./dist/index.js",
     "repository": {
@@ -43,6 +43,7 @@
         ]
     },
     "devDependencies": {
-        "prettier": "2.7.1"
+        "prettier": "2.7.1",
+        "react-test-renderer": "^18.2.0"
     }
 }
